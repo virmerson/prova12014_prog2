@@ -1,4 +1,4 @@
-# prova12014_prog2
+# Prova1- 2014 Prog 2
 
 Solução da prova 1 - 2014 Prog 2 - Facom.
 
