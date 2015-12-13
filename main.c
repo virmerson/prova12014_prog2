@@ -5,18 +5,18 @@
 int main(int argc, const char * argv[]) {
 
     
-    int k, n, i, x, j;
+    int k, n, i, x, j=0;
     MySet *set=  create(100);
     
-    printf("Digite número de casos de teste:");
+    printf("Quantos casos de teste?");
     scanf("%d", &k);
  
     //Casos de Teste
     while(k > 0)
     {
-        j = 0;
+    
         //Lendo no vetor a sequencia para cada caso de teste
-        printf ("Sequencia de quantos números?");
+        printf ("Sequencia %d terá quantos números?", ++j);
         scanf("%d", &n);
         //Lendo a sequencia
         for(i = 0; i < n; i++)
@@ -24,14 +24,14 @@ int main(int argc, const char * argv[]) {
         
         set->numOfElements = n;
         //Número que deseja saber se tem 2 termos do vetor que dá a soma.
-        printf("Número X da Soma: " );
+        printf("Verificar soma de qual número? " );
         scanf("%d", &x);
         
         //Existe soma?
         if(existsSum(set, x))
-            printf("S\n");
+            printf("Sim Existe\n");
         else
-            printf("N\n");
+            printf("Não Existe\n");
         
         k--;
     }
