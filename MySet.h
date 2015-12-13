@@ -1,6 +1,7 @@
 
 #include <stdbool.h>
 
+
 typedef struct {
     int numOfElements;
     int capacity;
